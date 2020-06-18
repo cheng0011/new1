@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="{CHARSET}">
+		<title></title>
+	</head>
+
+	<body>
+		<script>
+			var arr = [12, 3, 45, 5, 12, 45, 3, 6, 7];
+			var t = [];
+			t[0] = arr[0];
+			for(var i = 0; i < arr.length; i++) {
+				for(var k = 0; k < t.length; k++) {
+					if(t[k] == arr[i]) {
+						break;
+					}
+					if(k == t.length - 1) {
+						t.push(arr[i]);
+					}
+				}
+			}
+			console.log(t);
+		</script>
+
+	</body>
+
+</html>
